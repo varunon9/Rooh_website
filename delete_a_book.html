@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Delete a Book|Bookshelf</title>
+		<script type="text/javascript" src="js/bookshelf.js"></script>
+	</head>
+	<body>
+		<marquee>To delete a book record from database fill this form</marquee>
+		<form action="delete_a_book.php" method="post" name="delete_a_book_form" onsubmit="return authenticate2();">
+		<fieldset>
+				<legend>Admin Authentication</legend>
+				UserName: <input type="text" size="10" maxlength="20" name="username2" title="enter your username"/><br>
+				Password: <input type="password" size="10" maxlength="20" name="password2" title="enter your password"/><br>
+				</fieldset><br><br>
+			Book Id: <input type="text" size="10" maxlength="20" name="Id" id="Id" title="Enter the book id"/>
+			<input type="submit" value="submit" name="submit"/>
+		</form>
+		<h3 style="color:red;">Enter the correct book id. Check <a href="available_books.php">Available books</a></h3>
+	</body>
+</html>

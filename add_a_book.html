@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4
+/strict.dtd">
+<! DOCTYPE html>
+<html>
+	<head>
+		<title>Add a Book|Bookshelf|ROOH</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="css/stylesheet_bookshelf.css"/>
+		<script type="text/javascript" src="js/bookshelf.js"></script>
+	</head>
+	<body>
+		<div id="bookshelf_register">
+			<h3>Check the <a href="available_books.php" target="_blank">Available Books</a> before adding so as to avoid duplicate entry</h3>
+			<form action="add_a_book.php" id="registration_form" name="add_a_book_form" method="post" onsubmit="return authenticate1();">
+				<fieldset>
+				<legend>Admin Authentication</legend>
+				UserName: <input type="text" size="10" maxlength="20" name="username" title="enter your username"/><br>
+				Password: <input type="password" size="10" maxlength="20" name="password" title="enter your password"/><br>
+				</fieldset><br><br>
+				<fieldset>
+					<legend>Add a Book</legend>
+					<table cellspacing="1" cellpadding="1">
+				
+					<tr>
+						<td>Title:<input type="text" name="Title" size="60" maxlength="90" title="enter the book name"/></td>
+					</tr>
+					<tr>
+						<td>Author:<input type="text" name="Author" size="40" maxlength="60" title="Enter the name of author"/></td>
+					</tr>
+					<!--
+					<tr>
+						<td>Conform Password:<input type="password" name="password2" size="10" maxlength="20" title="Re enter Password"/></td>
+					</tr>
+					<tr>
+						<td>Name:<input type="text" name="name" size="20" maxlength="30" title="Type your Full name"/></td>
+					</tr>
+					<tr>
+						<td>
+							Year: 1st<input type="radio" name="year" value="1"/>
+							2nd<input type="radio" name="year" value="2"/>
+							Pre-final<input type="radio" name="year" value="prefinal"/>
+							Final<input type="radio" name="year" value="final"/>
+							M.Tech.<input type="radio" name="year" value="mtech"/>
+							MCA<input type="radio" name="year" value="mca"/>
+							Others<input type="radio" name="year" value="others"/>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>Hostel No:<input type="text" name="hostel_no" size="10" maxlength="20" title="enter your Hostel No"/></td>
+					</tr>
+					<tr>
+						<td>
+							Block No:<input type="text" name="block_no" size="10" maxlength="20" title="enter your address"/>
+							Room No:<input type="text" name="room_no" size="10" maxlength="20" title="enter your address"/>
+						</td>
+					</tr>
+					-->
+					<tr>
+						<!--<td>Category:<input type="text" name="Category" size="20" maxlength="30"/></td>-->
+						Category:<select name="Category">
+							<option value="Novel" selected="selected">Novel</option>
+							<option value="Academics">Academics</option>
+							<option value="Study Material">Study Material</option>
+							<option value="Encyclopedia">Encyclopedia</option>
+							<option value="General Knowledge">General Knowledge</option>
+							<option value="Others">Others</option>
+						</select>
+					</tr>
+					<!--
+					<tr>
+						<td>Quantity:<input type="text" name="Quantity" size="20" maxlength="30" title="enter the no of books"/></td>
+					</tr>
+					-->
+					<tr>
+						<td>Status:<input type="text" name="Status" size="20" maxlength="30" title="available/Not available"/></td>
+					</tr>
+					<!--
+					<tr>
+						<td>I accept the <a href="terms_and_contidions.html" target="_blank">Terms and Conditions</a> <input type="checkbox"/></td>
+					</tr>
+					-->
+					<tr>
+						<td><input type="submit" name="submit" value="submit"/></td>
+					</tr>
+				</table>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>
